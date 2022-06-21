@@ -2,7 +2,7 @@ package credentials;
 
 import base.BaseTest;
 import org.testng.annotations.Test;
-import pageobject.credentials.LoginPage;
+import pageobjects.credentials.LoginPage;
 import utilities.DataProviders;
 
 public class LoginTests extends BaseTest {

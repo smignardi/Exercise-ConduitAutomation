@@ -71,5 +71,11 @@
             <artifactId>poiji</artifactId>
             <version>3.1.7</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/faker/faker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
 </project>

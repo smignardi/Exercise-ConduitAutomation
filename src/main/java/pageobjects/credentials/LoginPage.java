@@ -1,4 +1,4 @@
-package pageobject.credentials;
+package pageobjects.credentials;
 
 import base.BasePage;
 import org.openqa.selenium.By;
