@@ -8,6 +8,7 @@ import utilities.CommonFlows;
 import utilities.DriverManager;
 import utilities.Logs;
 
+@Listeners({utilities.listeners.TestListeners.class, utilities.listeners.SuiteListeners.class})
 public abstract class BaseTest {
     protected WebDriver driver;
     protected final Logs log = new Logs();
