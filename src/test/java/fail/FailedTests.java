@@ -8,13 +8,13 @@ public class FailedTests extends BaseTest {
     private StepTwoPage stepTwoPage;
 
     @Test
-    public void failTest1() {
+    public void failTest0() {
         commonFlows.loginValidUser();
         stepTwoPage.verifyPage();
     }
 
     @Test
-    public void failTest2() {
+    public void failTest1() {
         commonFlows.goToStepOne();
         stepTwoPage.verifyPage();
     }
