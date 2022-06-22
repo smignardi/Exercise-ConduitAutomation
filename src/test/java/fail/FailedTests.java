@@ -8,7 +8,7 @@ public class FailedTests extends BaseTest {
     private StepTwoPage stepTwoPage;
 
     @Test
-    public void failTest0() {
+    public void ConduitFail() {
         commonFlows.loginValidUser();
         stepTwoPage.verifyPage();
     }
