@@ -18,7 +18,7 @@ public abstract class BasePage {
     protected WebDriverWait wait;
     protected SoftAssert softAssert;
     protected int timeout;
-    private final String mainUrl = "https://www.saucedemo.com/";
+    private final String mainUrl = "https://react-redux.realworld.io/";
 
     public BasePage(WebDriver driver) {
         this(driver, 5);
@@ -87,7 +87,7 @@ public abstract class BasePage {
     }
 
     public void goToIndex() {
-        log.info("Going to the index page");
+        log.info("Yendo a la pagina princial de Conduit");
         driver.get(mainUrl);
     }
 

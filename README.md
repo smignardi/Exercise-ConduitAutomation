@@ -1,6 +1,6 @@
 # SeleniumAutomationFramework
 
-Selenium Automation Framework using the following:
+Conduit Automation page using the following:
 
 * Page Object Model
 * Allure reports

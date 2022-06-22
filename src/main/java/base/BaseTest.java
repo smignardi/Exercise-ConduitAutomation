@@ -20,10 +20,10 @@ public abstract class BaseTest {
     protected void setUpBase() {
         driver = new DriverManager().initLocalDriver();
 
-        log.debug("Maximizing the window");
+        log.debug("Maximizando la pantalla");
         driver.manage().window().maximize();
 
-        log.debug("Deleting all cookies");
+        log.debug("Borrando todos los cookies");
         driver.manage().deleteAllCookies();
 
         initPages();
@@ -34,7 +34,7 @@ public abstract class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     protected void tearDownBase() {
-        log.debug("Killing the driver");
+        log.debug("Matando el driver");
         driver.quit();
     }
 

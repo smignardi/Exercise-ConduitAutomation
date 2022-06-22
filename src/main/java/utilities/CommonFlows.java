@@ -1,11 +1,13 @@
 package utilities;
 
 import org.openqa.selenium.WebDriver;
+import pageobjects.index.IndexPage;
 import pageobjects.checkout.CartPage;
 import pageobjects.checkout.StepOnePage;
 import pageobjects.checkout.StepTwoPage;
 import pageobjects.credentials.LoginPage;
 import pageobjects.shopping.HomeShoppingPage;
+import pageobjects.signup.SignUpPage;
 
 public class CommonFlows {
     private final Logs log = new Logs();
@@ -16,10 +18,20 @@ public class CommonFlows {
     }
 
     public void goToIndex() {
-        var loginPage = new LoginPage(driver);
+        var indexPage = new IndexPage(driver);
 
-        loginPage.goToIndex();
-        loginPage.waitPageToLoad();
+        indexPage.goToIndex();
+        indexPage.waitPageToLoad();
+    }
+
+
+    public void goToSignUp(){
+        var indexPage = new IndexPage(driver);
+        var signupPage = new SignUpPage(driver);
+
+        indexPage.goToSignUp();
+        signupPage.waitPageToLoad();
+        signupPage.verifyPage();
     }
 
     public void loginValidUser() {
@@ -59,4 +71,5 @@ public class CommonFlows {
         stepOnePage.fillForm(userData.getFirstname(), userData.getLastName(), userData.getZipcode());
         stepTwoPage.waitPageToLoad();
     }
+
 }
